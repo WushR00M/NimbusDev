@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>NimbusDev</title>
+        <meta name="description" content="NimbusDev (or WushR00M, also it's pronounced 'wh-uh-sh-room')">
+        <meta name="author" content="NimbusDev">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+        <link rel="manifest" href="./assets/site.webmanifest">
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    
+        <link href="./assets/style/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <meta property="og:title" content="NimbusDev">
+        <meta property="og:description" content="I'm NimbusDev, a software engineer and computer science researcher with a hobby of developing games and composing music, this is my personal website :P">
+        <meta property="og:image" content="./assets/android-chrome-512x512.png">
+        <meta property="og:url" content="https://nimbus.wushroomstudios.com/">
+        <meta property="og:type" content="website">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="NimbusDev">
+        <meta name="twitter:description" content="I'm NimbusDev, a software engineer and computer science researcher with a hobby of developing games and composing music, why is this linked on Twitter??">
+        <meta name="twitter:image" content="./assets/android-chrome-512x512.png">
+    </head>
+
+    <script>
+        var webTheme = false;
+
+        function toggleMode() {
+            var element = document.body;
+            element.classList.toggle("light-mode");
+            webTheme = !webTheme;
+
+            if (webTheme == true) {
+                document.getElementById("toggleButton").textContent="close the curtains";
+            } else {
+                document.getElementById("toggleButton").textContent="flashbang";
+            }
+        }
+
+        function buttonCopy() {
+            navigator.clipboard.writeText("https://nimbus.wushroomstudios.com/assets/buttons/nimbus.png");
+            alert("Copied to your clipboard!");
+        } 
+    </script>
+
+    <body>
+        <div class="headbar">
+            <button id="toggleButton" onclick="toggleMode()">flashbang</button>
+
+            <div class="headbar-notice">
+                <p class="headbar-notice">you're visiting NimbusDev's personal site, for a more "professional look", <a href="https://wushroomstudios.com">visit her indie studio's site, "WushR00M Studios",</a> named after her old alias!</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="divider">──── welcome ──────────────────────────────────────────────────────────────────────────────── </p>
+            <div class="profile-card">
+                <img src="./assets/apple-touch-icon.png" alt="Akira Kogami from Lucky Star">
+                <div class="profile-card-content">
+                    <h1>NimbusDev</h1>
+                    <a href="mailto:nimbus@wushroomstudios.com" class="social-link-one">email me: nimbus@wushroomstudios.com</a>
+                    <a href="https://github.com/WushR00M" class="social-link">visit GitHub</a>
+                    <a href="https://youtube.com/@wushroomnimbus" class="social-link">visit YouTube</a>
+                    <a href="https://twitter.com/@wushroomnimbus" class="social-link">visit Twitter</a>
+                    <p></p>
+                    <p>Hello! I'm NimbusDev, a 16 year old who specializes in software engineering and computer science research, alongside my hobby for composing music and game development.
+                        
+                    </p>
+                    <p>I started reading and writing around the age of 3, and gained my interest in programming when I was 8, before taking it seriously after turning 14.</p>
+                </div>
+            </div>
+            <p class="divider">──── projects / portfolio ─────────────────────────────────────────────────────────────────── </p>
+            <div class="project-content">
+                <h2>Sunrise</h2>
+                <p>My most major project yet: a 2D hack-n-slash where you play as a robot killing other robots, plus the focus of creating your own levels because
+                    I wanted to.
+                </p>
+                <div class="button-row">
+                    <a href="https://store.steampowered.com/app/4392380/Sunrise/">
+                        <button>steam page</button>
+                    </a>
+                    <a href="https://wrstudios.itch.io/sunrise">
+                        <button>itch.io page</button>
+                    </a>
+                    <a href="https://wushroomstudios.com/sunrise">
+                        <button>official page</button>
+                    </a>
+                    <a href="https://wushroomstudios.com/docs/#/">
+                        <button>modding documentation</button>
+                    </a>
+                    <a href="https://github.com/WushR00M-Studios/Sunrise-Issues">
+                        <button>bug reports page</button>
+                    </a>
+                </div>
+
+                <hr>
+            </div>
+            
+            <div class="project-content">
+                <h2>gmLua</h2>
+                <p>A C library / extension for GameMaker games that allows for Lua scripts to run within the GameMaker game itself. Has an exclusive game_call() function
+                    that allows for the script to interact with the game directly.
+                </p>
+                <div class="button-row">
+                    <a href="https://github.com/WushR00M/GML-Lua">
+                        <button>source code</button>
+                    </a>
+                    <a href="https://wrstudios.itch.io/gmlua">
+                        <button>itch.io mirror</button>
+                    </a>
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="project-content">
+                <h2>wonderland.jar / FRACTURE / BRIDGE</h2>
+                <p>These three Minecraft horror mods have gotten very popular in recent time, and I got hired earlier in 2026. Currently, I'm doing music and concepts
+                    and I also created and (mostly) run the official wonderland.jar YouTube channel, which is sitting at around 1,000 subscribers. FRACTURE and BRIDGE are
+                    not released yet and wonderland.jar's next update, v2.2, is currently in development.
+                </p>
+                <div class="button-row">
+                    <a href="https://modrinth.com/mod/wonderland-jar">
+                        <button>modrinth page</button>
+                    </a>
+                    <a href="https://x.com/WLJarNews">
+                        <button>about wonderland</button>
+                    </a>
+                    <a href="https://x.com/FractureNewsX">
+                        <button>about fracture</button>
+                    </a>
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="project-content">
+                <h2>Catgames</h2>
+                <p>An unblocked games website, has had 3 (technically 4) major revisions in the past, with this one being the final branch I'm willing to make 
+                    because I got harrassed (and still do get harrased) with random questions and mean comments at school for zero reason, alongside death threats.
+                    What is wrong with people?
+                </p>
+                <div class="button-row">
+                    <a href="https://github.com/WushR00M/Catgames">
+                        <button>visit site</button>
+                    </a>
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="project-content">
+                <h2>IMDM? / IsMyDeviceModdable?</h2>
+                <p>A simple tool that would ask questions and answer the question. Designed for consoles, never got time to update it ever, archived the repository for it recently.
+                </p>
+                <div class="button-row">
+                    <a href="https://wushroomstudios.com/IsMyDeviceModdable/">
+                        <button>visit outdated site</button>
+                    </a>
+
+                    <a href="https://github.com/WushR00M/IsMyDeviceModdable">
+                        <button>source code</button>
+                    </a>
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="project-content">
+                <h2>osu -> json</h2>
+                <p>A Python script that converts osu!mania charts (designed for 4-key charts) into a JSON format for anything else to read
+                </p>
+                <div class="button-row">
+                    <a href="https://github.com/WushR00M/Scripts/blob/main/Parser.py">
+                        <button>source code</button>
+                    </a>
+                </div>
+
+                <hr>
+            </div>
+
+            <p class="divider">──── blog ─────────────────────────────────────────────────────────────────────────────────── </p>
+            <div class="project-content">
+                <h2>Check back soon...</h2>
+                <p>Still a work in progress...
+                </p>
+            </div>
+
+            <p class="divider">──── other stuff ──────────────────────────────────────────────────────────────────────────── </p>
+            <div class="project-content">
+                <h2>Console / Hardware Collection</h2>
+                <p>I have a thing for collecting old hardware, or game consoles, here I'll list what I have so far:
+                </p>
+                <div class="project-content">
+                    <ul>
+                        <li>PlayStation 2 (Slim) - Released in 2000 / 2004 - Acquired in March 2026</li>
+                        <li>PlayStation 3 (Super Slim) - Released in 2006 / 2012 - Acquired in September 2024</li>
+                        <li>PlayStation 5 (Slim) - Released in 2020 / 2023 - Acquired sometime in 2025</li>
+                        <li>Sega Mega Drive / Genesis - Released in 1989 - Acquired sometime in 2024</li>
+                        <li>Xbox One (launch model) - Released in 2013 - Acquired in July 2026</li>
+                        <li>Original Xbox - Released in 2001 - Acquired sometime in 2023 / 2024</li>
+                        <li>DELL Optiplex 745 (running Windows 7) - Released in 2005 - Acquired sometime in 2024</li>
+                    </ul>
+                </div>
+                <hr>
+                <br>
+                <h2>88x31 Button</h2>
+                <p>If you want to add my site's button onto yours, then click on the button below, it'll copy it to your clipboard :D</p>
+                <button onclick="buttonCopy()">copy nimbusdev button to clipboard</button>
+            </div>
+
+            <br>
+
+            <a href="https://nimbus.wushroomstudios.com"><img src="./assets/buttons/nimbus.png" width="88" height="31" alt="88x31 button"></a>
+            <a href="https://pandaptable.moe"><img src="https://pandaptable.moe/buttons/button.avif" width="88" height="31" alt="88x31 button"></a>
+            <a href="https://byeoon.dev/"><img src="https://byeoon.dev/img/button.png" width="88" height="31" alt="88x31 button"></a>
+            <a href="https://tilde.town/"><img src="./assets/buttons/tilde_town.gif" width="88" height="31" alt="88x31 button"></a>
+            <a href="https://abigail.sh/"><img src="./assets/buttons/abigail_sh.png" width="88" height="31" alt="88x31 button"></a>
+            <a href="https://isabelroses.com/friends/"><img src="./assets/buttons/isabel.png" width="88" height="31" alt="88x31 button"></a>
+            <a href="https://mira.quest/"><img src="https://mira.quest/static/button.png" width="88" height="31" alt="88x31 button"></a>
+            <a href="https://lumap.xyz/"><img src="./assets/buttons/lumap.png" width="88" height="31" alt="88x31 button"></a>
+        </div>
+
+        <footer>
+
+        </footer>
+    </body>
+
+    <script src="https://keepandroidopen.org/banner.js?size=minimal&animation=off"></script>
+</html>
