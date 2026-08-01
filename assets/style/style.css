@@ -76,9 +76,31 @@ div.headbar {
   color: oklch(75% 0.12 310);
 }
 
+div.footbar {
+  position: sticky;
+  bottom: 0;
+
+  padding: 8px;
+  display: flex;
+  background-color: oklch(23% 0 0);
+
+  color: oklch(75% 0.12 310);
+}
+
 .light-mode .headbar {
   position: sticky;
   top: 0;
+
+  padding: 8px;
+  display: flex;
+  background-color: oklch(72% 0 0);
+
+  color: oklch(75% 0.12 310);
+}
+
+.light-mode .footbar {
+  position: sticky;
+  bottom: 0;
 
   padding: 8px;
   display: flex;
@@ -106,7 +128,41 @@ p.headbar-notice {
     height: 100%;
 }
 
+p.footbar {
+    color: oklch(42% 0 0);
+    margin: 0;
+    height: 100%;
+}
+
+code {
+    background-color: oklch(23% 0 0);
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px;
+    border-radius: 8px;
+    border-color: oklch(75% 0.12 310);
+}
+
+.light-mode code {
+    background-color: oklch(86% 0 0);
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px;
+    border-radius: 8px;
+    border-color: oklch(75% 0.12 310);
+}
+
+.button-row code {
+    margin-right: 8px;
+}
+
 .light-mode p.headbar-notice {
+    color: oklch(64% 0 0);
+    margin: 0;
+    height: 100%;
+}
+
+.light-mode p.footbar {
     color: oklch(64% 0 0);
     margin: 0;
     height: 100%;
@@ -135,6 +191,7 @@ div.project-content {
 p.divider {
     color: oklch(42% 0 0);
     font-style: italic;
+    font-size: 1vw;
     width: 100%;
 }
 
