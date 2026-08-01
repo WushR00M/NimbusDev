@@ -141,6 +141,7 @@ code {
     padding: 8px;
     border-radius: 8px;
     border-color: oklch(75% 0.12 310);
+    font-size: 1vw;
 }
 
 .light-mode code {
